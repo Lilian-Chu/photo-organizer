@@ -28,12 +28,12 @@ React Frontend
 FastAPI Backend
     ↓
 Photo Processing Pipeline
-    ├── EXIF extraction
-    ├── Face detection
-    ├── Blur detection
-    ├── Duplicate detection
-    ├── Landmark classification
-    └── Embedding generation
+1. EXIF extraction
+2. Face detection
+3. Blur detection
+4. Duplicate detection
+5. Landmark classification
+6. Embedding generation
     ↓
 SQLite + ChromaDB
 
