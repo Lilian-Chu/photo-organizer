@@ -22,6 +22,14 @@ As stated above, this program is a work in progress. This section outlines my cu
 - Duplicate detection
 - Review/delete UI
 
+### Tech Stack
+- React
+- TypeScript
+- FastAPI
+- OpenCV
+- ChromaDB
+- SQLite
+
 ### Planned architecture
 React Frontend
     ↓
@@ -37,17 +45,42 @@ Photo Processing Pipeline
     ↓
 SQLite + ChromaDB
 
-### Folder structure
-/photo-organizer
-    /frontend
-    /backend
-        /app
-        /services
-        /models
-        /pipelines
-        /utils
-    /data
-    /scripts
-    /tests
+## Roadmap
 
-P.S. The *AI Photo Organizer* has an unofficial name: The **Photo Organizer To Access, Tag, Optimize, & Ease Storage**. Otherwise known as POTATOES. I understand *AI Photo Organizer* is the more professional name, but I find **POTATOES** a very charming name as well.
+**Status: June 20, 2026**
+The AI Photo Organizer is currently in **Phase 1: Core Cleanup MVP**
+
+### Phase 1: Core Cleanup MVP
+
+After the completion of this phase, the *AI Photo Organizer* will have the following features:
+- Import photos
+- Generate thumbnails
+- Detect blurry/low quality photos
+- Detect duplicate photos
+- Extract basic metadata
+- Offer review/delete UI
+
+**GOAL:** Build a working local desktop/web application.
+
+### Phase 2: Smart Organization
+
+After the completion of this phase, the *AI Photo Organizer* will have the following features:
+- Group by location metadata
+- Cluster by timeline/trip
+- Automatically create coherent albums
+- Tag scenic landmarks
+
+**GOAL:** Implement rudimentary photo organization based on photo metadata. 
+
+### Phase 3: AI Search
+
+After the completion of this phase, the *AI Photo Organizer* will have the following features:
+- Search with NLP album prompts (eg. "Find beach sunset photos")
+- Semantic search
+- CLIP embeddings
+
+**GOAL:** Implement AI-powered searches to create albums using information that cannot be captured using only metadata.
+
+=====
+
+**An important aside:** The *AI Photo Organizer* has an unofficial name: The **Photo Organizer To Access, Tag, Optimize, & Ease Storage**. Otherwise known as POTATOES. I understand *AI Photo Organizer* is the more professional name, but I find **POTATOES** a very charming name as well.
