@@ -1,0 +1,152 @@
+:root {
+  --primary-bg: #1B1C1E;
+  --sidebar-bg: #222326;
+  --button-bg: #2b2c30; /* raise */
+  --border-color: #38393E;
+  --primary-text-color: #E7E5E1;
+  --secondary-text-color: #9B9DA4;
+  --faint-text-color: #6f7178;
+  --accent-color: #d99a45;
+  --button-text-color: #1d1405; /* for use with accent color as bg */
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text-color);
+}
+
+main {
+  flex: 1;
+}
+
+.header-bar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: var(--faint-text-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.2em 0 1.2em 2.4em;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  min-width: 12em;
+}
+
+img.logo {
+  height: 1.5rem;
+}
+
+.search-bar {
+  background-color: var(--sidebar-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: var(--faint-text-color);
+
+  flex: 1;
+  max-width: 40em;
+}
+
+.upload {
+  color: var(--primary-text-color);
+}
+
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  min-width: 12em;
+  padding: 1.2em;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  & li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 7px 10px;
+    text-align: left;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/* CHANGE TO ACTIVE CHILD; THIS IS JUST FOR PROOF OF CONCEPT */
+.nav-bar > :first-child {
+  background-color: var(--button-bg);
+  color: var(--primary-text-color);
+  box-shadow: inset 2px 0 0 var(--accent-color);
+}
+
+#screen-initial {
+  padding: 0 3.2em;
+  text-align: left;
+}
+
+.initial-flavor {
+  color: var(--faint-text-color);
+  font-size: 0.8rem;
+  margin-bottom: 0.8em;
+}
+
+.btn {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 0.6em 1.2em;
+  font-size: 0.8rem;
+}
+
+.initial-upload {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.9em;
+}
+
+.btn.primary {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+}
+
+.btn.secondary {
+  background: none;
+  color: var(--primary-text-color);
+}
+
+.initial-upload-hint {
+  color: var(--faint-text-color);
+  font-size: 0.6rem;
+}
+
+.initial-info {
+  margin-top: 3em;
+  border-top: 1px solid var (--border-color);
+  font-size: 0.9rem;
+}
+
+.initial-info div {
+  padding: 0.9em 0;
+  border-bottom: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 12px;
+}
